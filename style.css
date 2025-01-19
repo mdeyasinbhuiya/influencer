@@ -258,7 +258,7 @@ color: #787885;
     
 }
 .see-more{
-    margin-top: 20px;
+    margin-top: 40px;
     color: #ce004c;
     display: flex;
     align-items: center;
@@ -296,3 +296,58 @@ color: #787885;
 }
 
 /* popular collection section complete */
+/* feature product section start from here */
+
+.feature-product{
+    width: 75vw;
+    margin:10px auto 100px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+.product-pic{
+    width: 600px;
+}
+.product-pic img{
+    width: 100%;
+}
+.product-title{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.product-description{
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.join-now{
+    font-weight: bold;
+    color: white;
+    background-color: #ce004c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+    .feature-product{
+        flex-direction: column-reverse;
+        width: 80vw;
+        text-align: center;
+        margin-top: 100px;
+        gap: 50px;
+    }
+    .product-pic{
+        width: 70vw;
+    }
+    .join-now{
+        margin: auto;
+    }
+}
+/* feature product section complete */
+
+/* footer section start from here */
