@@ -183,13 +183,20 @@ color: #787885;
 .sponsor{
     width: 80vw;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
     margin: 70px auto 100px;
     padding: 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.194);
     border-bottom: 1px solid rgba(0, 0, 0, 0.194);
+   
+}
+.sponsor img{
+    transition: transform 1s;
+}
+.sponsor img:hover{
+    transform: scale(1.5);
 }
 
 @media screen and (max-width:992px) {
