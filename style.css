@@ -351,3 +351,39 @@ color: #787885;
 /* feature product section complete */
 
 /* footer section start from here */
+
+.footer{
+    background-color: rgb(1, 1, 38);
+    color: white;
+    width: 100vw;
+}
+.footer-content{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-tilte{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.copyright{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.icons img{
+    width: 24px;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+@media screen and (max-width:992px) {
+    .footer-content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
