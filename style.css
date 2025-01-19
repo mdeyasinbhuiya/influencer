@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;
+}
+/* shaered element/class */
+.dark-1{
+    color: #3A3A3A;
+}
+.dark-2{
+    color: #18191F;
+}
+.dark-3{
+color: #787885;
+}
+
+
+/* navbar start from here */
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    gap: 200px;
+}
+.navigation ul{
+    display: flex;
+    gap: 35px;
+}
+.navigation ul li{
+    list-style: none;
+    justify-content:  center;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    
+}
+.navigation li a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    
+}
+.brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width:576px) {
+    .navigation{
+        flex-direction: column;
+        gap: 20px;
+        width: 90vw;
+        margin: 50px auto;
+    }
+    .navigation ul{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:992px) and (min-width:576px) {
+    .navigation{
+        flex-direction: column;
+        gap: 20px;
+        width: 90vw;
+        margin: 50px auto;
+    }
+}
+
+/* banner section  */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 130px;
+    gap: 100px;
+}
+.banner-content{
+    width: 582px;
+    padding-left: 100px;
+}
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.banner-description{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.banner-btn{
+    font-weight: bold;
+    padding: 10px 24px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    transition: transform 1s, background-color 1s;
+}
+.banner-btn:hover{
+        transform: scale(1.25);
+        background-color: #ce004c;
+}
+.banner-pic{
+    background-image: url("assets/images/Circle\ design.svg");
+    height:475px;
+    width: 475px;
+    background-repeat: no-repeat;
+    position: cover;
+    align-content: center;
+}
+.banner-pic img{
+    align-content: center; */
+    width: 100%;
+    
+}
+
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin: 50px auto 50px;
+        
+    }
+    .banner-content{
+        width: 90vw;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        padding:0px;
+    }
+    .banner-btn{
+        margin: auto;
+    }
+    .banner-title{
+        font-size: 1.75rem;
+    }
+    .banner-pic{
+        width: 300px;
+        height: 300px;
+        background-image: url("assets/images/Circle\ design.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        /* border: 1px solid black; */
+        
+    }
+    .banner-pic img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px) and (min-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        gap: 50px;
+        margin: 50px auto 50px;
+        
+    }
+    .banner-content{
+        width: 90vw;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        padding:0px;
+    }
+    .banner-btn{
+        margin: auto;
+    }
+}
